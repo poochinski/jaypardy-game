@@ -1,0 +1,61 @@
+.player-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #001f5b;
+    color: white;
+    min-height: 100vh;
+}
+
+.join-game-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.join-game-form input {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+}
+
+.join-game-form button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #0d47a1;
+    color: gold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.join-game-form button:hover {
+    background-color: #2563eb;
+}
+
+.buzzer-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.buzzer-button {
+    padding: 40px 60px;
+    font-size: 36px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.buzzer-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}

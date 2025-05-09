@@ -1,0 +1,199 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* MAIN MENU (NEW THEMING) */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #001f5b;
+    color: white;
+    padding: 40px;
+}
+
+.menu h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: gold;
+    text-shadow: 2px 2px 5px black;
+}
+
+.menu button {
+    padding: 20px 50px;
+    font-size: 28px;
+    margin: 20px;
+    background-color: #0d47a1;
+    color: gold;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+.menu button:hover {
+    background-color: #2563eb;
+    box-shadow: 0 0 25px gold;
+}
+
+/* BACK BUTTON */
+.back-btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-color: #001f5b;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0d47a1;
+    color: gold;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.back-btn:hover {
+    background-color: #2563eb;
+    box-shadow: 0 0 15px gold;
+}
+
+/* Jaypardy board wrapper */
+.jaypardy-board-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f5b;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Jaypardy board */
+.jaypardy-board {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #001f5b;
+    border: 15px solid #ffffff;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    align-items: center;
+}
+
+.category-header {
+    display: flex;               /* NEW: force same size */
+    align-items: center;         /* center vertically */
+    justify-content: center;     /* center horizontally */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: gold;
+    background-color: #0d47a1;
+    padding: 30px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    width: 240px;
+    height: 150px;              /* 💥 NEW: fixed height */
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
+
+.question-cell {
+    margin: 15px 0;
+    width: 240px;
+    height: 170px;
+    font-size: 44px;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    background-color: #001f5b;
+    color: gold;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+    box-sizing: border-box;
+}
+
+.question-cell:hover {
+    background-color: #0d47a1;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1);
+    transform: scale(1.07);
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    font-size: 32px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, 0.4);
+}
+
+.popup-content button {
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: #001f5b;
+    color: gold;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.popup-content button:hover {
+    background-color: #0d47a1;
+    box-shadow: 0 0 15px gold;
+}

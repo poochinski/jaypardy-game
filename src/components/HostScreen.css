@@ -1,0 +1,44 @@
+.host-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #001f5b;
+    color: white;
+    padding: 50px;
+}
+
+.host-menu h1 {
+    font-size: 36px;
+    color: gold;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 30px;
+}
+
+.menu-btn {
+    padding: 20px 50px;
+    font-size: 24px;
+    background-color: #0d47a1;
+    color: gold;
+    border: 3px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    margin: 20px;
+}
+
+.menu-btn:hover {
+    background-color: #2563eb;
+    box-shadow: 0 0 25px gold;
+}
+
+.note {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ccc;
+    text-align: center;
+    max-width: 400px;
+}
